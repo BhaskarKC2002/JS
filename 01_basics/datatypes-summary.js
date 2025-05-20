@@ -37,9 +37,34 @@ let myObje = {
 
 //Function stored in variable
 const myFunction = function() {
-    console.log("Hello World");
+    // console.log("Hello World");
 }
 
 
-console.log(typeof myFunction) //Return function, actually called object fucntion
+// console.log(typeof myFunction) //Return function, actually called object fucntion
 //Link: https://262.ecma-international.org/5.1/#sec-11.4.3 
+
+
+// ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+// Memory: 2 types: Stack (Primitive) and Heap (Non-Primitive)
+//Defined in Stack - Copy of declared varaible gotten
+//Defined in Heap - Reference(original value) gotten 
+
+let myYoutubename = "bhaskarkcdotcom"
+
+let anothername = myYoutubename
+anothername = 'kcbhaskar'
+console.log(myYoutubename)
+console.log(anothername)
+
+let user1 = {
+    email: "user@goolge.com",
+    upi: "user@bl"
+}
+
+let user2 = user1
+user2.email = "hitesh@google.com"
+
+console.log(user1.email)
+console.log(user2.email)
